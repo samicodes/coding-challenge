@@ -6,14 +6,14 @@ productDetailCtrl.controller('ProductDetailController', ['$scope', '$routeParams
     });
 	
 	$scope.comment = [];
-                $scope.btn_add = function() {
-                    if($scope.txtcomment !=''){
-                    $scope.comment.push($scope.txtcomment);
-                    $scope.txtcomment = "";
-                    }
-                }
+    $scope.btn_add = function() {
+    if($scope.txtcomment !=''){
+        $scope.comment.push($scope.txtcomment);
+        $scope.txtcomment = "";
+		}
+    }
  
-                $scope.remItem = function($index) {
-                    $scope.comment.splice($index, 1);
-                }
+    $scope.remItem = function($index) {
+        $scope.comment.splice($index, 1);
+    }
   }]);
